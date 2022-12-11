@@ -47,7 +47,7 @@ namespace Confab.Modules.Conferences.Core.Services
                 throw new HostNotFoundException(id);
             }
           
-            if(await _hostDeletionPolicy.CanDeleteAsync(host) is false)
+            if (await _hostDeletionPolicy.CanDeleteAsync(host) is false)
             {
                 throw new CannotDeleteHostException(id);
             }

@@ -14,7 +14,7 @@ namespace Confab.Modules.Conferences.Core.Policies
 
         public async Task<bool> CanDeleteAsync(Host host)
         {
-            if(host.Conferences is null || !host.Conferences.Any())
+            if (host.Conferences is null || !host.Conferences.Any())
             {
                 return true;
             }
