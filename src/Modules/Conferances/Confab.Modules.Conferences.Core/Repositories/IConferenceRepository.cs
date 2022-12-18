@@ -9,8 +9,8 @@ namespace Confab.Modules.Conferences.Core.Repositories
     {
         Task<Conference> GetAsync(Guid id);
         Task<IReadOnlyCollection<Conference>> BrowseAsync();
-        Task AddAsync(Conference host);
-        Task UpdateAsync(Conference host);
-        Task DeleteAsync(Conference host);
+        Task AddAsync(Conference conference);
+        Task UpdateAsync(Conference conference);
+        Task DeleteAsync(Conference conference);
     }
 }

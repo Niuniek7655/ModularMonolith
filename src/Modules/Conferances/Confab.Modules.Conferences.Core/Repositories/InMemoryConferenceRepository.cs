@@ -31,7 +31,7 @@ namespace Confab.Modules.Conferences.Core.Repositories
 
         public Task<Conference> GetAsync(Guid id) => Task.FromResult(_conferences.SingleOrDefault(x => x.Id == id));
 
-        public Task UpdateAsync(Conference host)
+        public Task UpdateAsync(Conference conference)
         {
             return Task.CompletedTask;
         }
